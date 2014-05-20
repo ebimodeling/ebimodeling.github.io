@@ -1,4 +1,4 @@
-embmodeling.github.io
+EBI Modeling program website
 =====================
 
-EBI Modeling program website
+
