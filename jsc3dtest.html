@@ -1,14 +1,13 @@
 <html>
 <body>
-	<div class="captionbox pull-right">
+<div>
       <canvas id="firstfacecv" width=600 height=600 title="Click and Drag to rotate, hold down ctrl to pan. Scroll to Zoom.">
-      <img src="images/facepot/headmesh.jpg" width=180 title="Screenshot - use HTML5/canvas compatible browser to view 3D model"/>
       </canvas>
       <script type="text/javascript" src="js/jsc3d.js"></script>
       <script type="text/javascript" src="js/jsc3d.touch.js"></script>
       <script type="text/javascript">
           var viewer = new JSC3D.Viewer(document.getElementById('firstfacecv'));
-          viewer.setParameter('SceneUrl',         '3dmodels/agave1.obj');
+          viewer.setParameter('SceneUrl',         'agave1.obj');
           viewer.setParameter('ModelColor',       '#CAA618');
           viewer.setParameter('BackgroundColor1', '#FFFFFF');
           viewer.setParameter('BackgroundColor2', '#FFFFFF');
@@ -17,6 +16,6 @@
           viewer.update();
       </script>
       <p> David's model of an Agave plant, captured with Catch123D, cleaned up by Colten in Blender. 5/22/2014 </p>
-  </div>
+</div>
 </body>
 </html>
