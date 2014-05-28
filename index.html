@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html>
+      <head>
+            <style>
+                  .twirlybox {height: 400px;}
+                  .twirlybox canvas {float: left;}
+            </style>
+      </head>
+<body>
+<div class="twirlybox">
+      <canvas id="cv1" width=400 height=400 title="Click and Drag to rotate, hold down ctrl to pan. Scroll to Zoom.">
+      </canvas>
+      <script type="text/javascript" src="js/jsc3d.js"></script>
+      <script type="text/javascript">
+          var viewer = new JSC3D.Viewer(document.getElementById('cv1'));
+          viewer.setParameter('SceneUrl',         '3dmodels/Soya1/min_sculpt.obj');
+          viewer.setParameter('ModelColor',       '#CAA618');
+          viewer.setParameter('BackgroundColor1', '#FFFFFF');
+          viewer.setParameter('BackgroundColor2', '#FFFFFF');
+          viewer.setParameter('RenderMode',       'texture');
+          viewer.init();
+          viewer.update();
+      </script>
+      <div class="caption">
+            <h1> Soya </h1>
+            <p> Our first model of a Soybean plant, using 123D Catch </p>
+      </div>
+</div>
+<div class="twirlybox">
+      <canvas id="cv2" width=400 height=400 title="Click and Drag to rotate, hold down ctrl to pan. Scroll to Zoom.">
+      </canvas>
+      <script type="text/javascript" src="js/jsc3d.js"></script>
+      <script type="text/javascript">
+          var viewer = new JSC3D.Viewer(document.getElementById('cv2'));
+          viewer.setParameter('SceneUrl',         '3dmodels/Agave2/untitled.obj');
+          viewer.setParameter('ModelColor',       '#CAA618');
+          viewer.setParameter('BackgroundColor1', '#FFFFFF');
+          viewer.setParameter('BackgroundColor2', '#FFFFFF');
+          viewer.setParameter('RenderMode',       'texture');
+          viewer.init();
+          viewer.update();
+      </script>
+      <div>
+            <h1> Agave tequilana </h1>
+            <p> Colten's model of an Agave plant, captured with Catch123D, cleaned up in Blender. 5/22/2014 </p>
+      </div>
+</div>
+<div class="twirlybox">
+      <canvas id="cv3" width=400 height=400 title="Click and Drag to rotate, hold down ctrl to pan. Scroll to Zoom.">
+      </canvas>
+      <script type="text/javascript" src="js/jsc3d.js"></script>
+      <script type="text/javascript">
+          var viewer = new JSC3D.Viewer(document.getElementById('cv3'));
+          viewer.setParameter('SceneUrl',         '3dmodels/Agave1/agaveOne.obj');
+          viewer.setParameter('ModelColor',       '#CAA618');
+          viewer.setParameter('BackgroundColor1', '#FFFFFF');
+          viewer.setParameter('BackgroundColor2', '#FFFFFF');
+          viewer.setParameter('RenderMode',       'texture');
+          viewer.setParameter('InitRotationX',    '180');
+          viewer.init();
+          viewer.update();
+      </script>
+      <div>
+            <h1> Agave colorata </h1>
+            <p> David's model of an Agave plant, captured with Catch123D, cleaned up by Colten in Blender. 5/22/2014 </p>
+      </div>
+</div>
+</body>
+</html>
