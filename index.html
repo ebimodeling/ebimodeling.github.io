@@ -4,9 +4,16 @@
             <style>
                   .twirlybox {height: 400px;}
                   .twirlybox canvas {float: left;}
+		  .header {border-bottom: 1px solid black; width: 100%;}
+		  .examplebox {overflow: auto;}
+		  .examplebox img {float: left; height: 200px;}
             </style>
       </head>
 <body>
+<div class="header">
+	<h2> Results from 123D Catch cloud software </h2>
+	<p> Free software but with long wait times waiting for processing.  Autocad gains full rights to sell and redistribute any files uploaded to their service. They use Smart3DCapture on their end to generate the models - a license for that is on the order of $10,000/yr. </p>
+</div>
 <div class="twirlybox">
       <canvas id="cv1" width=400 height=400 title="Click and Drag to rotate, hold down ctrl to pan. Scroll to Zoom.">
       </canvas>
@@ -23,7 +30,7 @@
       </script>
       <div class="caption">
             <h1> Soya </h1>
-            <p> Our first model of a Soybean plant, using 123D Catch </p>
+	    <p><a href="3dmodels/Soya1/min_sculpt.obj">Direct link to ASCII .obj file (1.02 MB).</a> Click to view plain text in browser, or right click to download file.</p>
       </div>
 </div>
 <div class="twirlybox">
@@ -42,7 +49,8 @@
       </script>
       <div>
             <h1> Agave tequilana </h1>
-            <p> Colten's model of an Agave plant, captured with Catch123D, cleaned up in Blender. 5/22/2014 </p>
+	    <p><a href="https://uofi.box.com/s/qofbt7sb2dns8tnb26u0">Click here for original jpgs</a> Must be logged in as a collaborator on box.com</p>
+	    <p><a href="3dmodels/Agave2/untitled.obj">Direct link to ASCII .obj file (19.4 MB)</a> Click to view plain text in browser, or right click to download file.</p>    
       </div>
 </div>
 <div class="twirlybox">
@@ -62,8 +70,41 @@
       </script>
       <div>
             <h1> Agave colorata </h1>
-            <p> David's model of an Agave plant, captured with Catch123D, cleaned up by Colten in Blender. 5/22/2014 </p>
+	    <p><a href="https://uofi.box.com/s/txgm3i2jmfoya9murdy4">Click here for original jpgs</a> Must be logged in as a collaborator on box.com</p>
+	    <p><a href="3dmodels/Agave1/agaveOne.obj">Direct link to ASCII .obj file (8.56 MB)</a> Click to view plain text in browser, or right click to download file.</p>    
       </div>
+</div>
+<div class="header">
+	<h2> Results from AgiSoft </h2>
+	<p> Screengrabs from <a href="http://agisoft.ru/">Agisoft</a> in demomode (preventing exports). Individual PC version is $80, 'professional' license for running remotely on servers is $550. Very good results, very little user interaction required. Same tech as 123D Catch (Structure From Motion) - so still has difficulty capturing stems. </p>
+</div>
+<div class="examplebox">
+	<h3> Agave Colorata </h3>
+	<img src="photos/colorata/example1.png"/>
+	<img src="photos/colorata/example2.png"/>
+	<img src="photos/colorata/example3.png"/>
+	<img src="photos/colorata/example4.png"/>
+	<img src="photos/colorata/example5.png"/>
+</div>
+<div class="examplebox">
+	<h3> Agave Tequilana </h3>
+	<img src="photos/tequilana/example1.png"/>
+	<img src="photos/tequilana/example2.png"/>
+</div>
+<div class="examplebox">
+	<h3> Spinach </h3>
+	<img src="photos/spinach/example1.png"/>
+	<img src="photos/spinach/example2.png"/>
+</div>
+<div class="header">
+	<h2> VisualSFM </h2>
+	<p> <a href="http://ccwu.me/vsfm/">VisualSFM</a> is free and open source photogrammetry software. It performs sparse point clouds without any trouble. For dense point clouds (the useful ones), it relies on complicated dependencies that can conflict with various software versions. (I wasn't able to get it to work on Windows 7 or Ubuntu 14, but maybe someone else can / maybe I haven't tried hard enough)</p>
+	<p> I was able to get satisfactory results from <a href="http://www.ifp.uni-stuttgart.de/publications/software/sure/index.en.html">SURE</a>, a program that uses the output of the most basic version of VisualSFM. It is designed to take advatage ofas many processing cores and gigs of RAM it can get a hold of, is free for research purposes, and produced VERY high resolution results (13 million points, 300MB files). However, it's export file is .las - a binary file typically used with LiDar systems, so further steps are required to transform the result into plain text or .obj, involving processing with <a href="http://www.cs.unc.edu/~isenburg/lastools/">LAStools</a> and <a href="http://meshlab.sourceforge.net/">MeshLab.</a> 
+</div>
+<div class="examplebox">
+	<h3> Agave Colorata </h3>
+	<img style="height:400px" src="photos/visualsfm/visualsfm.png"/>
+	<img style="height:400px" src="photos/visualsfm/sure.png"/>
 </div>
 </body>
 </html>
